@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordly+</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <main class="app">
+
+        <header class="hero">
+            <p class="eyebrow">Wordly+</p>
+            <h1>Search smarter.</h1>
+            <p class="subtitle">
+                Look up definitions, pronunciation, synonyms, and save your favorite words.
+            </p>
+        </header>
+
+        <section class="search-card">
+            <form id="search-form">
+                <input type="text" id="word-input" placeholder="Search a word..." autocomplete="off" />
+
+                <button type="submit">Search</button>
+            </form>
+
+            <div class="controls">
+                <button id="random-word-btn" type="button">Random Word</button>
+                <button id="theme-toggle-btn" type="button">Light Mode</button>
+            </div>
+        </section>
+
+        <section id="message-area"></section>
+
+        <section id="result-area"></section>
+
+        <section class="side-section">
+            <div class="panel">
+                <h2>Search History</h2>
+                <div id="history-list" class="tag-list"></div>
+            </div>
+
+            <div class="panel">
+                <h2>Saved Words</h2>
+                <div id="favorites-list" class="tag-list"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
